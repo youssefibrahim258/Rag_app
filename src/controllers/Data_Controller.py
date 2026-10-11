@@ -20,7 +20,7 @@ class Data_Controller(Base_Controller):
 
         return True , ResponseSignal.FILE_UPLOAD_SUCCESS.value
 
-    def generate_uniqe_file_name(self,original_file_name : str ,project_id : str):
+    def generate_uniqe_file_path(self,original_file_name : str ,project_id : str):
         
         random_key=self.generate_random_string()
         project_path=ProjectController().get_project_path(project_id=project_id)
