@@ -16,9 +16,7 @@ class Base_Controller :
     
         
 
-if __name__ == "__main__":
-    s=Base_Controller()
-    print(s.base_dir)
+
 
 
 
